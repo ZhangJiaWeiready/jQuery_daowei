@@ -10,8 +10,12 @@
 }
 .container {
   color: #333;
+  background: #f8f8f8;
 }
 .container .header {
+  position: fixed;
+  top: 0;
+  z-index: 1111;
   width: 100%;
   height: 71px;
   box-sizing: border-box;
@@ -24,7 +28,7 @@
   position: fixed;
   z-index: 1111;
   transform-origin: center -10px;
-  box-shadow: 0 3px 5px #7e8c8d;
+  box-shadow: 0 3px 5px #e8e8e8;
   animation: move 1s;
 }
 .container .header nav {
@@ -111,6 +115,7 @@
   width: 100%;
   height: 420px;
   font-weight: bold;
+  margin-top: 71px;
   overflow: hidden;
   color: #fff;
   position: relative;
@@ -431,6 +436,7 @@
 .container .ServiceContent {
   width: 1200px;
   margin: auto;
+  margin-top: 71px;
 }
 .container .ServiceContent h2 {
   line-height: 85px;
@@ -512,6 +518,7 @@
 }
 .container >.img {
   width: 100%;
+  margin-top: 71px;
   height: 300px;
   background: url("../images/information.jpg") center center no-repeat;
 }
@@ -837,6 +844,7 @@
 .container .detailContent .shopContent {
   float: left;
   width: 960px;
+  background: #fff;
 }
 .container .detailContent .shopContent .top {
   width: 100%;
@@ -949,6 +957,7 @@
   width: 230px;
   float: right;
   border: 1px solid #eaeaea;
+  background: #fff;
 }
 .container .detailContent .argument >.title {
   display: inline-block;
@@ -988,8 +997,330 @@
   float: right;
   color: #e94840;
 }
+.container .headerTitle {
+  width: 100%;
+  height: 140px;
+  margin-top: 86px;
+  background: #fff;
+}
+.container .headerTitle .headerWrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .headerTitle .leftShopInfo {
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 120px;
+  float: left;
+  line-height: 140px;
+}
+.container .headerTitle .leftShopInfo .shopName {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+.container .headerTitle .leftShopInfo .time {
+  margin-left: 10px;
+  color: #929292;
+  font-size: 14px;
+}
+.container .headerTitle .leftShopInfo .time i {
+  color: #e94840;
+}
+.container .headerTitle .rightShopInfo {
+  float: right;
+  height: 120px;
+  margin-top: 15px;
+  vertical-align: middle;
+  line-height: 120px;
+}
+.container .headerTitle .rightShopInfo .wrap {
+  height: 100%;
+  vertical-align: middle;
+}
+.container .headerTitle .rightShopInfo .item {
+  height: 100%;
+  width: 100px;
+  margin-top: 52px;
+  line-height: 22px;
+  float: left;
+  text-align: center;
+}
+.container .headerTitle .rightShopInfo .item .tag {
+  color: #e94840;
+}
+.container .mainContent {
+  width: 100%;
+}
+.container .mainContent .top {
+  width: 100%;
+  height: 40px;
+  background: #323434;
+}
+.container .mainContent .top ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .mainContent .top ul li {
+  float: left;
+  width: 140px;
+  height: 100%;
+  text-align: center;
+}
+.container .mainContent .top ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+.container .mainContent .top ul li.active {
+  background: #424242;
+}
+.container .mainContent .projectLeft {
+  width: 1200px;
+  margin: 22px auto 0;
+}
+.container .mainContent .projectLeft .project {
+  width: 960px;
+}
+.container .mainContent .projectLeft .project .getMore span {
+  cursor: pointer;
+}
+.container .mainContent .projectLeft .project .leftContant {
+  background: #fff;
+  margin-bottom: 20px;
+}
+.container .mainContent .projectLeft .project .leftContant >h2 {
+  font-size: 16px;
+  color: #666;
+  font-weight: 600;
+  line-height: 60px;
+  margin: 0 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+}
+.container .mainContent .projectLeft .project .leftContant >h2 .needBottom {
+  padding-bottom: 16px;
+  border-bottom: 3px solid #e94840;
+}
+.container .mainContent .projectLeft .project .leftContant >h2 .num {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.container .mainContent .projectLeft .project .leftContant .content span {
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px 25px;
+  height: 40px;
+  line-height: 40px;
+}
+.container .mainContent .projectLeft .project .leftContant .content p {
+  line-height: 28px;
+  margin: 10px 25px 25px;
+  font-size: 16px;
+}
+.container .mainContent .projectLeft .project .leftContant .comments {
+  width: 96%;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin: 0 3%;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 6px;
+  vertical-align: top;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul {
+  width: 92%;
+  margin-left: 20px;
+  display: inline-block;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul li {
+  line-height: 28px;
+  background: #fff;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul li .star {
+  width: 70px;
+  margin-left: 0;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul li .star img {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  vertical-align: middle;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul li .date {
+  margin-left: 10px;
+  color: #333;
+  font-size: 14px;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul .commentImg {
+  margin: 15px auto;
+  display: inline-block;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul .commentImg img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul .commentImg img:hover {
+  transform-origin: 0 0;
+  height: 260px;
+  width: 260px;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul .commentPosition {
+  color: #898989;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .comment ul .commentPosition img {
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .fenye {
+  width: 100%;
+  height: 152px;
+  text-align: center;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .fenye a {
+  color: #929292;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  margin: 50px 5px;
+  background: #fff;
+  display: inline-block;
+  cursor: pointer;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .fenye a.on {
+  color: #f00;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .fenye .nums {
+  display: inline-block;
+  margin-top: -1px;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .fenye .nums span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  border: 1px solid #e5e5e5;
+  width: 32px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 50px 5px;
+  cursor: pointer;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .fenye .nums span:hover {
+  color: #fff;
+  background: #fe454a;
+}
+.container .mainContent .projectLeft .project .leftContant .comments .fenye .nums span.active {
+  color: #fff;
+  background: #fe454a;
+}
+.container .mainContent .projectLeft .project .leftContant >ul {
+  width: 100%;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li {
+  border-bottom: 1px solid #eaeaea;
+  height: 200px;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li:hover {
+  background: #f8f8f8;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a img {
+  width: 150px;
+  height: 150px;
+  margin: 25px;
+  float: left;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo {
+  width: 75%;
+  float: left;
+  margin-top: 25px;
+  color: #333;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #1d1515;
+  width: 100%;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 800;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo >p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-line-calmp: 1;
+  line-height: 42px;
+  color: #999;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo .bottomContent {
+  margin-top: 20px;
+  line-height: 42px;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo .left {
+  float: left;
+  font-size: 14px;
+  color: #898989;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo .left .red {
+  color: #fc545e;
+  margin-right: 20px;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo .left i {
+  font-size: 32px;
+  font-weight: 800;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo .left em {
+  text-decoration: line-through;
+}
+.container .mainContent .projectLeft .project .leftContant >ul >li a .shopInfo .right {
+  float: right;
+  color: #999;
+}
+.container .mainContent .projectLeft .project .getMore {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+.container .mainContent .projectLeft .project .getMore span {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  border: 1px #eaeaea solid;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  line-height: 3;
+  color: #b1b1b1;
+}
 .container >.banner {
   height: 240px;
+  margin-top: 71px;
   background: url("/images/aboutbanner.jpg") no-repeat center center;
 }
 .clearFix {
