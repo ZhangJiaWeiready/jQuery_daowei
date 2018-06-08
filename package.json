@@ -2,8 +2,8 @@
   "name": "daowei",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp livereload",
-    "server" : "node app.js"
+    "start": "concurrently \"node app.js\" \"gulp livereload\" "
+
   },
   "devDependencies": {
     "gulp": "^3.9.1",
