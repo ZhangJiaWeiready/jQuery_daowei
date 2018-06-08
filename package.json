@@ -2,8 +2,9 @@
   "name": "daowei",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"node app.js\" \"gulp livereload\" "
-
+    "start":"gulp: liverload",
+    "server": "node app.js",
+    "quick": "concurrently \"node app.js\" \"gulp livereload\" "
   },
   "devDependencies": {
     "gulp": "^3.9.1",
